@@ -1,0 +1,25 @@
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        string result;
+        string longS;
+        string shortS;
+        if(word2.size() > word1.size()) {
+            longS = word2;
+            shortS = word1;
+        }
+        else {
+            longS = word1;
+            shortS = word2;
+        }
+
+        for(int i=0; i<shortS.size(); ++i) {
+            result.push_back(word1[i]);
+            result.push_back(word2[i]);
+        }
+        for(int i=shortS.size(); i<longS.size(); ++i) {
+            result.push_back(longS[i]);
+        }
+        return result;
+    }
+};
