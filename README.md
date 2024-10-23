@@ -1,2 +1,3 @@
 # Leetcode-Solutions
 Leetcode solutions for personal preference
+This is the repository I have made to store my personal daily challenge solving practice on LeetCode
